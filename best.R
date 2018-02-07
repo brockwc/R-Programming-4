@@ -16,7 +16,7 @@ best <- function(state, outcome) {
         stop("invalid outcome")
     }
 
-    ## Create subset of data by state
+    ## Create subset of data by state using the user input abbreviation
     state_sub <- subset(outcome_data, outcome_data$State == state)
     
     ## Return hospital name in that state which has the lowest 30-day death rate
